@@ -57,9 +57,11 @@
 
 
 - title: Certifications 
-  type: nested_list
+  type: time_table
   contents:
-    - title: SQL for Data Analysis 
+    - title: SQL for Data Analysis
+      linkedin: LinkedIn Learning Certification
+      year: January 2022
 
 - title: Interests
   type: list

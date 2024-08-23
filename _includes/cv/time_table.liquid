@@ -42,6 +42,30 @@
                     <td class="institution">{{ content.institution }}</td>
                   </tr>
                 {% endif %}
+	              {% if content.collaboration %}
+                  <tr>
+                    <td style="vertical-align: top; text-align: center;" class="institution"> 
+                      <i class="fas fa-people-group iconcollaboration"></i>
+                    </td>
+                    <td class="institution">{{content.collaboration}}</td>
+                  </tr>
+                {% endif %}
+                {% if content.linkedin %}
+                  <tr>
+                    <td style="vertical-align: top; text-align: center;" class="institution"> 
+                    <i class="fab fa-linkedin iconlinkedin"></i>
+                    </td>
+                    <td class="institution">{{content.linkedin}}</td>
+                  </tr>
+                {% endif %}
+                {% if content.location %}
+                  <tr>
+                    <td style="vertical-align: top; text-align: center;" class="institution">
+                    <i class="fas fa-map-marker-alt iconlocation"></i>
+                    </td>
+                    <td class="institution"> {{ content.location }}</td>
+                  </tr>
+                {% endif %}
                 {% if content.department %}
                   <tr>
                     <td style="vertical-align: top; text-align: center" class="department">
