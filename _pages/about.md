@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Researcher Associate | CERN physicist 
+subtitle: Postdoctoral Researcher Associate at <a href='https://w3.physics.arizona.edu/'>University of Arizona</a>
 
 profile:
   align: right
