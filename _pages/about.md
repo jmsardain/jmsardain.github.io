@@ -15,3 +15,5 @@ social: true # includes social icons at the bottom of the page
 ---
 
 Member of the <a href='https://atlas.cern/'>ATLAS Collaboration at CERN</a> (2017-present)
+
+Main focus is the interface between machine learning and particle physics
