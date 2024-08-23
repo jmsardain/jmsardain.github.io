@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: - Postdoctoral Research Associate at <a href='https://w3.physics.arizona.edu/'>University of Arizona</a>
-          - Member of the <a href=' https://atlas.cern/'>ATLAS Collaboration at CERN</a> 
+subtitle: Postdoctoral Research Associate at <a href='https://w3.physics.arizona.edu/'>University of Arizona</a>. Member of the <a href=' https://atlas.cern/'>ATLAS Collaboration at CERN</a> 
 
 profile:
   align: right
