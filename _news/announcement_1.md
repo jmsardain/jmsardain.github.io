@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-08-02
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Lowest ATLAS limit on boosted hadronic resonances on <a href="https://arxiv.org/pdf/2408.00049">arXiv</a>
