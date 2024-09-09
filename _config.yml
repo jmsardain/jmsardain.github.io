@@ -3,8 +3,8 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Jad
-middle_name: Mathieu
+first_name: Jad Mathieu
+middle_name:
 last_name: Sardain
 email: jad.sardain@cern.ch
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -130,7 +130,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: random thoughts # blog_name will be displayed in your blog page
-blog_description: 
+blog_description:
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -614,7 +614,7 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 
 jekyll_get_json:
-  - data: 
+  - data:
     json: assets/json/resume.json # it can also be an url
 jsonresume:
   - basics
