@@ -365,7 +365,7 @@ enable_publication_thumbnails: true
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes
 # -----------------------------------------------------------------------------
- 
+
 # These are the defaults
 external_links:
   enabled: true
@@ -393,6 +393,7 @@ imagemagick:
     - ".png"
     - ".tiff"
     - ".gif"
+    - ".pdf"
   output_formats:
     webp: "-quality 85"
 
