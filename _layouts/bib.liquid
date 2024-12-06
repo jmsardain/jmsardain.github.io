@@ -161,6 +161,7 @@
     {% if hook_exists == 'true' %}
       {% include hook/bib.liquid %}
     {% endif %}
+
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
@@ -170,8 +171,28 @@
       {{ entry.note | strip }}
     </div>
 
+
     <!-- Links/Buttons -->
     <div class="links">
+      {% if entry.keywords %}
+        {% assign keywords = entry.keywords | remove: "[" | remove: "]" | remove: '"' | split: ", " %}
+        <div class="keywords">
+          {% assign first_group = "Large Laguange Models, Natural Language Processing, Text-to-SQL, Bayesian Neural Network, Repulsive Ensemble, kNN, Graph Neural Network, Transformers, Deep Neural Network, Adversarial, Gaussian Mixture Model, Pattern Recognition" | split: ", " %}
+          {% assign second_group = "Calorimeter, Dark Matter Search, QCD, Jet Tagging, Jet Physics, Lund Jet Plane, Tracking, Top Physics" | split: ", " %}
+
+          {% for keyword in keywords %}
+            {% if first_group contains keyword %}
+              <span class="badge font-weight-bold text-uppercase align-middle" style="min-width: 75px; background-color: #5499c7 ;">
+                {{- keyword -}}
+              </span>
+            {% elsif second_group contains keyword %}
+              <span class="badge font-weight-bold text-uppercase align-middle" style="min-width: 75px; background-color: #dc7633 ;">
+                {{- keyword -}}
+              </span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awareded{% endif -%}
@@ -234,26 +255,6 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">ATLAS Web</a>
-      {% endif %}
-
-      {% if entry.keywords %}
-        <div class="keywords">
-          {% for keyword in entry.keywords %}
-            {% if keyword == "Lund Jet Plane" or keyword == "QCD" or keyword == "Dark matter search"%}
-              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-                {{- keyword -}}
-              </span>
-            {% elsif keyword == "Bayesian Neural Network" or keyword == "Repulsive Ensemble" or keyword == "kNN" or keyword == "Graph Neural Network" or keyword == "Transformers"  or keyword == "Deep Neural Network" or keyword == "Adversarial" or keyword == "Gaussian Mixture Model" or keyword == "Pattern Recognition"%}
-              <span class="badge font-weight-bold primary-color-dark text-uppercase align-middle" style="min-width: 75px">
-                {{- keyword -}}
-              </span>
-            {% else %}
-              <span class="badge font-weight-bold warning-color-dark text-uppercase align-middle" style="min-width: 75px">
-                {{- keyword -}}
-              </span>
-            {% endif %}
-          {% endfor %}
-        </div>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
