@@ -235,6 +235,26 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">ATLAS Web</a>
       {% endif %}
+
+      {% if entry.keywords %}
+        <div class="keywords">
+          {% for keyword in entry.keywords %}
+            {% if keyword == "Lund Jet Plane" or keyword == "QCD" or keyword == "Dark matter search"%}
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                {{- keyword -}}
+              </span>
+            {% elsif keyword == "Bayesian Neural Network" or keyword == "Repulsive Ensemble" or keyword == "kNN" or keyword == "Graph Neural Network" or keyword == "Transformers"  or keyword == "Deep Neural Network" or keyword == "Adversarial" or keyword == "Gaussian Mixture Model" or keyword == "Pattern Recognition"%}
+              <span class="badge font-weight-bold primary-color-dark text-uppercase align-middle" style="min-width: 75px">
+                {{- keyword -}}
+              </span>
+            {% else %}
+              <span class="badge font-weight-bold warning-color-dark text-uppercase align-middle" style="min-width: 75px">
+                {{- keyword -}}
+              </span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or  entry.eprint or entry.pmid or entry.isbn %}
