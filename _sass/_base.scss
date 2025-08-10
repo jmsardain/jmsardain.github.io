@@ -386,6 +386,19 @@ ul.task-list input[type="checkbox"] {
           color: var(--global-theme-color);
         }
       }
+
+      // Custom HuggingFace icon styling
+      .huggingface-icon {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+      }
+
+      &:hover .huggingface-icon {
+        color: var(--global-theme-color);
+      }
     }
   }
 
