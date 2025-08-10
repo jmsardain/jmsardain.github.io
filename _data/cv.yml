@@ -20,29 +20,29 @@
       location: Toulouse, France
       year: 2020 - 2022
       description:
-        - Clustering Algorithms, Pattern Recognition, Adversarial Networks, Jet Physics 
+        - Clustering Algorithms, Pattern Recognition, Adversarial Networks, Jet Physics
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD 
+    - title: PhD
       institution: Sorbonne Université
       location: Paris, France
       year: 2017 - 2020
       description:
         - Particle Physics, Markhov Chain Monte Carlo, Jet Physics
 
-- title: Responsibilites 
+- title: Responsibilites
   type: time_table
   contents:
     - title: Jet Tagging Group
       collaboration: ATLAS Collaboration at CERN
-      department: Subgroup Convener 
-      year: 2023 - present 
+      department: Subgroup Convener
+      year: 2023 - present
     - title: ML4Calo Group
       collaboration: ATLAS Collaboration at CERN
       department: Project Leader
-      year: 2022 - present 
+      year: 2022 - present
 
 
 - title: Service and Outreach
@@ -51,14 +51,17 @@
     - title: Community Reviewer
       department: Frontiers in Big Data and AI in High-Energy Physics
       year: 2023 - present
-    - title: Fête de la Science 
-      location: Paris, France 
+    - title: Fête de la Science
+      location: Paris, France
       year: 2017 - 2019
 
 
-- title: Certifications 
+- title: Certifications
   type: time_table
   contents:
+    - title: Hugging Face Agents Course
+      department: Hugging Face
+      year: June 2025
     - title: SQL for Data Analysis
       linkedin: LinkedIn Learning Certification
       year: January 2022
