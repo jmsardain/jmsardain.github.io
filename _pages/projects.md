@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Non ATLAS related projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Here are some projects that take my time when I am not working physics-ing ! 
 nav: false
-nav_order: 6
-display_categories: [work, fun]
+nav_order: 3
+# display_categories: [work, fun]
 horizontal: false
 ---
 
