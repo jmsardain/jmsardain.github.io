@@ -4,7 +4,7 @@ title: Hugging Face Agent Course
 description: This is my official first look at agents !
 img: assets/img/projects/HFCertificate/HFIntro.png
 importance: 1
-# category: work
+category: work
 # related_publications: true
 ---
 

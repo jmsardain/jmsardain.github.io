@@ -5,7 +5,7 @@ permalink: /projects/
 description: Here are some projects that take my time when I am not working physics-ing ! 
 nav: false
 nav_order: 3
-# display_categories: [work, fun]
+display_categories: [work, fun]
 horizontal: false
 ---
 
