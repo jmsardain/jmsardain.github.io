@@ -178,7 +178,7 @@
         {% assign keywords = entry.keywords | remove: "[" | remove: "]" | remove: '"' | split: ", " %}
         <div class="keywords">
           {% assign first_group = "Large Laguange Models, Natural Language Processing, Text-to-SQL, Bayesian Neural Network, Repulsive Ensemble, kNN, Graph Neural Network, Transformers, Deep Neural Network, Adversarial, Gaussian Mixture Model, Pattern Recognition" | split: ", " %}
-          {% assign second_group = "Calorimeter, Dark Matter Search, QCD, Jet Tagging, Jet Physics, Lund Jet Plane, Tracking, Top Physics, Precision Measurement, Jet Topics, Quark Gluon Tagging" | split: ", " %}
+          {% assign second_group = "Calorimeter, Dark Matter Search, QCD, Jet Tagging, Jet Physics, Lund Jet Plane, Tracking, Top Physics, Precision Measurement, Jet Topics, Quark Gluon Tagging, q/g Tagging" | split: ", " %}
 
           {% for keyword in keywords %}
             {% if first_group contains keyword %}
