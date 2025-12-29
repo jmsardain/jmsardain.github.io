@@ -17,6 +17,6 @@ I passed the course and got a certificate. This strengthened my knowledge on age
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/HFCertificate/HuggingFaceAIAgentCourse.pdf" title="HFCerticate" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/HFCertificate/HuggingFaceAIAgentCourse.jpg" title="HFCerticate" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
