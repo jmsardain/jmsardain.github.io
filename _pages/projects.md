@@ -3,7 +3,7 @@ layout: page
 title: Non ATLAS related projects
 permalink: /projects/
 description: Here are some projects that take my time when I am not working physics-ing ! 
-nav: false
+nav: true
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false
